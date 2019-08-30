@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  kv-injector:
+    image: kv-injector
+    build:
+      context: .
+      dockerfile: Kv.Injector/Dockerfile
+  kv-injector-web:
+    image: kv-injector-web
+    build:
+      context: .
+      dockerfile: Kv.Injector.TestWeb/Dockerfile

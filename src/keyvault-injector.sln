@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kv.Injector", "Kv.Injector\Kv.Injector.csproj", "{C837A139-E452-4D3E-94E3-4FD107B31A67}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kv.Injector.TestWeb", "Kv.Injector.TestWeb\Kv.Injector.TestWeb.csproj", "{CFED3874-6FCF-47CB-A3D9-D835DBFB9074}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A9DD8829-B4B1-458E-A214-E6A14759EAAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "secrets", "secrets", "{B4B97DCB-DDF8-4FF8-9649-8AD7DF768EF2}"
+	ProjectSection(SolutionItems) = preProject
+		secrets\appsettings.secrets.json = secrets\appsettings.secrets.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DDE37654-FC9B-4884-B9DA-7A0687D58B84}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C837A139-E452-4D3E-94E3-4FD107B31A67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C837A139-E452-4D3E-94E3-4FD107B31A67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C837A139-E452-4D3E-94E3-4FD107B31A67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C837A139-E452-4D3E-94E3-4FD107B31A67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFED3874-6FCF-47CB-A3D9-D835DBFB9074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFED3874-6FCF-47CB-A3D9-D835DBFB9074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFED3874-6FCF-47CB-A3D9-D835DBFB9074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFED3874-6FCF-47CB-A3D9-D835DBFB9074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9DD8829-B4B1-458E-A214-E6A14759EAAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9DD8829-B4B1-458E-A214-E6A14759EAAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9DD8829-B4B1-458E-A214-E6A14759EAAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9DD8829-B4B1-458E-A214-E6A14759EAAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7587B3B6-047E-4963-94CF-42A93131D1EA}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+  kv-injector:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      #- ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_URLS=http://+:80
+      #- ASPNETCORE_HTTPS_PORT=44380
+    ports:
+      - "50896:80"
+      #- "44380:443"
+    volumes:
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+      - ./secrets:/app/secrets:rw  
+  kv-injector-web:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      #- ASPNETCORE_URLS=https://+:443;http://+:80
+      - ASPNETCORE_URLS=http://+:80
+      #- ASPNETCORE_HTTPS_PORT=44380
+    ports:
+      - "50897:80"
+      #- "44380:443"
+    volumes:
+      - ./secrets:/app/secrets:ro
