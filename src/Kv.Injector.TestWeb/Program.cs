@@ -19,6 +19,7 @@ namespace Kv.Injector.TestWeb {
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .ConfigureAppConfiguration((hc, config) => config.AddJsonFile("secrets/appsettings.secrets.json", optional: true))
+                //.ConfigureAppConfiguration((hc, config) => config.AddJsonFile("appsettings.keyvault.json", optional: true))
                 .UseStartup<Startup>();
     }
 }
